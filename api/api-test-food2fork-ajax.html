@@ -1,28 +1,28 @@
 <html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <title>Api Stack Overflow</title>
-    <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+    <head>
+        <meta charset="utf-8">
+        <title>Api Stack Overflow</title>
+        <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
 
-    <script type="text/javascript">
-        $(document).ready(function() {
-            /*function to sanitize the JSON if it is necesary*/
-            function sanitizeJSON(unsanitized) {
-                var str = JSON.stringify(unsanitized);
-                var output = str.replace(/\\/g, "\\\\").replace(/\n/g, "\\n").replace(/\r/g, "\\r").replace(/\t/g, "\\t").replace(/\f/g, "\\f").replace(/"/g, "\\\"").replace(/'/g, "\\\'").replace(/\&/g, "\\&");
-                return output;
-            }
-            /*
+        <script type="text/javascript">
+            $(document).ready(function() {
+                /*function to sanitize the JSON if it is necesary*/
+                function sanitizeJSON(unsanitized) {
+                    var str = JSON.stringify(unsanitized);
+                    var output = str.replace(/\\/g, "\\\\").replace(/\n/g, "\\n").replace(/\r/g, "\\r").replace(/\t/g, "\\t").replace(/\f/g, "\\f").replace(/"/g, "\\\"").replace(/'/g, "\\\'").replace(/\&/g, "\\&");
+                    return output;
+                }
+                /*
             JSONP, which stands for "JSON with Padding" (and JSON stands for JavaScript Object Notation), is a way to get data from another domain that bypasses CORS (Cross Origin Resource Sharing) rules. CORS is a set of "rules," about transferring data between sites that have a different domain name from the client.
             We would like to see if we can get an valid JSON result which we can parse in using AJAX
             */
-            /* Update all the parameters for your API test*/
-            var params = {
-                q: 'chicken',
-                key: 'd48fb246d87e5aa80bfb9aa7d21cfe84'
-            };
-            var result = $.ajax({
+                /* Update all the parameters for your API test*/
+                var params = {
+                    q: 'chicken',
+                    key: 'd48fb246d87e5aa80bfb9aa7d21cfe84'
+                };
+                var result = $.ajax({
                     /* update API end point */
                     url: "http://food2fork.com/api/search",
                     //                    url: "http://food2fork.com/api/search?key=d48fb246d87e5aa80bfb9aa7d21cfe84&q=shredded%20chicken",
@@ -37,8 +37,6 @@
                     console.log(result);
                     console.log(sanitizeJSON(result));
                     console.log(JSON.stringify(result));
-
-
                     /* if the results are not meeningful, it might help to convert them to string first
                     var displayStringifiedResults = JSON.stringify(result);
                     console.log(displayStringifiedResults);*/
@@ -52,14 +50,13 @@
                     console.log(error);
                     console.log(errorThrown);
                 });
-        });
+            });
+        </script>
 
-    </script>
+    </head>
 
-</head>
-
-<body>
-    <p>There is nothing to see here. Please check your console log instead</p>
-</body>
+    <body>
+        <p>There is nothing to see here. Please check your console log instead</p>
+    </body>
 
 </html>
