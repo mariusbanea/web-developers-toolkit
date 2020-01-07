@@ -1,0 +1,49 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>ProPublica Api</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            //https://projects.propublica.org/api-docs/congress-api/members/#lists-of-members
+
+            const url = `https://api.propublica.org/congress/v1/116/senate/members.json`;
+
+            // make the api call using the URL, dataType (JSON or JSONP), type (GET or POST)
+            fetch(url, {
+                    headers: {
+                        'X-API-Key': 'BmmO90mGUEFL9Cvm6Jbawg4SLddVgecRONE6RIKC',
+                        'content-type': 'application/json'
+                    }
+                })
+
+                //success scenario (call the function to display the results)
+                .then(response => {
+                    console.log(response);
+                    if (response.ok) {
+                        return response.json();
+                    }
+                    throw new Error(response.statusText);
+                })
+                .then(responseJson => console.log(responseJson))
+
+                // failure scenario (display errors)
+                .catch(err => {
+                    console.log(err);
+                });
+
+
+
+        });
+    </script>
+
+</head>
+
+<body>
+    <p>There is nothing to see here. Please check your console log instead</p>
+</body>
+
+</html>
