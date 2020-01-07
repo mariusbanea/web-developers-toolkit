@@ -5,24 +5,36 @@
     <meta charset="UTF-8">
     <title>There are 3 ways to target a container (boxes) in CSS</title>
     <style>
-        /*parent child relationship - all the children (use SPACE)*/
+        /*
+        parent child relationship - all the children (use SPACE)
+        (find the "div" inside the "main" inside the "body")
+        */
         body main div {
             color: red;
         }
 
 
-        /*parent child relationship - first child only (use >)*/
+        /*
+        parent child relationship - first child only (use >)
+        (find only the first "div" inside the "main" inside the "body")
+        */
         body main>div {
             color: blue;
         }
 
 
-        /*same element targeting in 2 ways: using the tag (div) and the class (row) (use NOTHING)*/
+        /*
+        same element targeting in 2 ways: using the tag (div) and the class (row) (use NOTHING)
+        (find the "div" which has the class "row")
+        */
         div.row {
             color: green;
         }
 
-        /*target multiple elements (use comma)*/
+        /*
+        target multiple elements (use comma)
+        find all the "div"s and all the "main"s
+        */
         main, div {
             border: 1px solid red;
         }
