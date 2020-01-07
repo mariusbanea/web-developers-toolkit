@@ -49,6 +49,15 @@ console.log(carDetails.engine.turbo); // shows "true"
 console.log(carDetails.myCar()); // shows "My Car is a Nissan Terrano"
 
 
+/* array vs objects
+- arrays are having integers as key (0, 1, 2)
+- objects are having string as keys ("make", "model")
+- arrays are not using too much space on in the memory, but if they are changed, is hard to retrieve the data
+- arrays is inside the square brackets []
+- objects are using far more space in the memory, but it is easier to retrieve data
+- objects is inside the square brackets {}
+- objects can have methods inside, but the arrays can't
+*/
 
 
 //(6) function definition used to create code templates https://github.com/mariusbanea/web-developers-toolkit/blob/master/js/functions-and-objects-theory-with-examples.js
