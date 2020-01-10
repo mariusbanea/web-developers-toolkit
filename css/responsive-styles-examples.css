@@ -7,29 +7,25 @@ body {
 Even if this approach requires more work in the long run, it is used often in order to develop and Minimum Voable Product with the least amount of initial investment
 */
 
-/*large desktop*/
+/* acting like an IF statement, the media query is a set of conditions in which the containing css will be applied
+for example the statament above says: IF the media on which this CSS is going to used is SCREEN (Mobiles, Tables, Laptops, Desktops or Projectors) and the maximum resolution of that device is 1024px, THEN apply the body color blue for all the text
+*/
 
+/*large desktop*/
 @media only screen and (max-width: 1600px) {
-    /* acting like an IF statement, the media query is a set of conditions in which the containing css will be applied
-    for example the statament above says: IF the media on which this CSS is going to used is SCREEN (Mobiles, Tables, Laptops, Desktops or Projectors) and the maximum resolution of that device is 1024px, THEN apply the body color blue for all the text
-    */
     body {
         color: yellow;
     }
 }
 
 /*iPad lanscape / small laptop*/
-
 @media only screen and (max-width: 1024px) {
-
     body {
         color: blue;
     }
 }
 
-
 /*iPad potrait*/
-
 @media only screen and (max-width: 768px) {
     body {
         color: red;
@@ -37,30 +33,26 @@ Even if this approach requires more work in the long run, it is used often in or
 }
 
 /*Android landscape*/
-
 @media only screen and (max-width: 640px) {
     body {
         color: brown;
     }
 }
 
-
 /*iPhone landscape*/
-
 @media only screen and (max-width: 480px) {
     body {
         color: green;
     }
 }
 
-
 /*iPhone portrait*/
-
 @media only screen and (max-width: 320px) {
     body {
         color: purple;
     }
 }
+
 
 
 /* mobile first approach = (the website was built initialy for mobiles and it will be adapted for desktop)
@@ -69,16 +61,13 @@ This is the ideal way to built websites because it is much easier to adapt from 
 
 
 /*iPhone portrait*/
-
 @media only screen and (min-width: 320px) {
     body {
         color: purple;
     }
 }
 
-
 /*iPhone landscape*/
-
 @media only screen and (min-width: 480px) {
     body {
         color: green;
@@ -86,25 +75,20 @@ This is the ideal way to built websites because it is much easier to adapt from 
 }
 
 /*Android landscape*/
-
 @media only screen and (min-width: 640px) {
     body {
         color: brown;
     }
 }
 
-
 /*iPad potrait*/
-
 @media only screen and (min-width: 768px) {
     body {
         color: red;
     }
 }
 
-
 /*iPad lanscape / small laptop*/
-
 @media only screen and (min-width: 1024px) {
     body {
         color: blue;
@@ -112,7 +96,6 @@ This is the ideal way to built websites because it is much easier to adapt from 
 }
 
 /*large desktop*/
-
 @media only screen and (min-width: 1600px) {
     body {
         color: yellow;
