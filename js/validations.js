@@ -33,8 +33,17 @@ function checkURL(inputURL) {
     }
     return outputURL;
 }
+function validateEmail(inputEmail){
+    let outputEmail = inputEmail;
+    let mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    if(!inputEmail.match(mailformat)) {
+        outputEmail = ""
+    }
+    return outputEmail
+}
 
 // how to use
 console.log(checkInteger(25));
 console.log(checkString("hey"));
 console.log(checkURL("google.com"));
+console.log(validateEmail("hey@gmail.com"));
