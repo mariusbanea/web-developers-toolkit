@@ -5,7 +5,7 @@
 function showName(firstName, lastName) {
 
     // nameIntro is global variable to the inner function but it is local to the outer function
-    var nameIntro = "My name is ";
+    let nameIntro = "My name is ";
 
     // this inner (child) function has access to the outer (parent) function's variables, including the parameter
     function makeFullName() {
