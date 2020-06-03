@@ -1,5 +1,5 @@
 # Capstone Project Title
-One line descritpion of what this app is doing and who is it for
+One line description of what this app is doing and who is it for
 
 ## Working Prototype
 You can access a working prototype of the React app here: https://your-app-client.herokuapp.com/ and Node app here: https://your-app-server.herokuapp.com/
