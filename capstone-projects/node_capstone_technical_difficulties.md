@@ -8,4 +8,3 @@
 6. Node is a low security kind of back-end programming language, so avoid apps that would involve the use and storage of sensitive info like name, locations, payments, etc; also have in mind that all the code related to the casptone will be part of a public Gihub repo, so if there is code functionaltiy that, for some reason you are confortable sharing, is good to avoid it
 7. Game projects are significaly dificult to build because they ususaly require the use of canvans
 8. CMS like projects (example: Wordpress like app) are having complex back-end functionalities with require a lot of advanced knowledge of both back-end and front-end functionalities so it is better to avoid them becasue of complexity.
-
