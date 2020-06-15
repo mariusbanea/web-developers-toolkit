@@ -18,29 +18,40 @@ This app is for two types of users: a visitor and a logged-in user
 ### Wireframes
 Landing/Login Page
 :-------------------------:
-![Landing/Login Page](/github-images/wireframes/landing-page-wireframes.png)
-
+![Landing/Login Page](/github-images/wireframes/landing-page-wireframe.png)
+Landing/Register Page
+![Landing/Register Page](/github-images/wireframes/landing-page-wireframe.png)
 
 ## Screenshots
 Landing/Login Page
 :-------------------------:
 ![Landing Page](/github-images/screenshots/login-page-screenshot.png)
-
+Landing/Register Page
+![Register Page](/github-images/screenshots/login-page-screenshot.png)
 
 ## Functionality
 The app's functionality includes:
 * Every User has the ability to create an account
 
-## Business Objects (back-end structure)
-* User (database table)
-    * Username (email validation)
-    * Password (at least 8 chars, at least one alpha and a special character validation)
-
-
 ## Technology
 * Front-End: HTML5, CSS3, JavaScript ES6, React
 * Back-End: Node.js, Express.js, Mocha, Chai, RESTful API Endpoints, Postgres
 * Development Environment: Heroku, DBeaver
+
+
+## Front-end Structure - React Components Map
+* __Index.js__ (stateless)
+    * __App.js__ (stateful)
+        * __LandingPage.js__ (stateful) - gets the _"prop name"_ and the _"callback prop name"_ from the __App.js__
+            * __Login.js__ (stateful) -
+            * __Register.js__ (stateful) -
+        * __Navbar.js__ (stateless) -
+
+## Back-end Structure - Business Objects
+* User (database table)
+    * Username (email validation)
+    * Password (at least 8 chars, at least one alpha and a special character validation)
+
 
 ## API Documentation
 API Documentation details:
