@@ -1,3 +1,4 @@
+//returns 0 if the integer is NOT valid
 function checkInteger(inputInteger) {
     let outputValue = inputInteger;
     if (inputInteger == "") {
@@ -11,7 +12,7 @@ function checkInteger(inputInteger) {
     }
     return outputValue;
 }
-
+//returns empty string if the string is NOT valid
 function checkString(inputString) {
     let outputText = inputString;
     if (inputString === undefined) {
@@ -22,7 +23,7 @@ function checkString(inputString) {
     }
     return outputText;
 }
-
+//returns / if the url is NOT valid
 function checkURL(inputURL) {
     let outputURL = inputURL;
     if (inputURL === undefined) {
@@ -33,7 +34,7 @@ function checkURL(inputURL) {
     }
     return outputURL;
 }
-
+//returns empty string if the email is NOT valid
 function validateEmail(inputEmail) {
     let outputEmail = inputEmail;
     //basic email validation
@@ -43,7 +44,7 @@ function validateEmail(inputEmail) {
     }
     return outputEmail
 }
-
+//returns empty string if the username is NOT valid
 function validateUsername(inputUsername) {
     let outputUsername = inputUsername;
     // only lowercase and uppercase letters and dash
@@ -53,7 +54,7 @@ function validateUsername(inputUsername) {
     }
     return outputUsername
 }
-
+//returns empty string if the password is NOT valid
 function validatePassword(inputPassword) {
     let outputPassword = inputPassword;
     // at least one number, one lowercase and one uppercase letter
