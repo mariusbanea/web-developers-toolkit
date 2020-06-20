@@ -34,6 +34,17 @@ function checkURL(inputURL) {
     }
     return outputURL;
 }
+//returns a "no-image" image if the image is NOT valid
+function checkEmptyImage(inputURL) {
+    let outputURL = inputURL
+    if (inputURL === undefined) {
+        outputURL = "https://legacytaylorsville.com/wp-content/uploads/2015/07/No-Image-Available1.png"
+    }
+    if (inputURL == null) {
+        outputURL = "https://legacytaylorsville.com/wp-content/uploads/2015/07/No-Image-Available1.png"
+    }
+    return outputURL
+}
 //returns empty string if the email is NOT valid
 function validateEmail(inputEmail) {
     let outputEmail = inputEmail;
@@ -70,6 +81,7 @@ function validatePassword(inputPassword) {
 console.log(checkInteger(25));
 console.log(checkString("hey"));
 console.log(checkURL("google.com"));
+console.log(checkEmptyImage("something.jpg"));
 console.log(validateEmail("hey@gmail.com"));
 console.log(validateUsername("Abcde-fg"));
 console.log(validatePassword("Ab1234_6"));
