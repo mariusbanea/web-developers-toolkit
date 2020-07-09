@@ -48,9 +48,10 @@ The app's functionality includes:
         * __Navbar.js__ (stateless) -
 
 ## Back-end Structure - Business Objects
-* User (database table)
-    * Username (email validation)
-    * Password (at least 8 chars, at least one alpha and a special character validation)
+* Users (database table)
+    * id (auto-generated)
+    * username (email validation)
+    * password (at least 8 chars, at least one alpha and a special character validation)
 
 
 ## API Documentation
