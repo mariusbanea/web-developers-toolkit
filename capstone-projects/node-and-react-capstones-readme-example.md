@@ -1,11 +1,11 @@
 # Capstone Project Title (to do now)
 One line description of what this app is doing and who is it for
 
-## Working Prototype (to do later)
+## 1. Working Prototype (to do later)
 (Example) You can access a working prototype of the React app here: https://your-app-client.herokuapp.com/ and Node app here: https://your-app-server.herokuapp.com/
 
 
-## User Stories (to do now)
+## 2. User Stories (to do now)
 This app is for two types of users: a visitor and a logged-in user
 
 #### (Example) Landing Page
@@ -14,13 +14,42 @@ This app is for two types of users: a visitor and a logged-in user
 * so I can decide if I want to use it
 
 
+## 3. Functionality (to do now)
+The app's functionality includes:
+* (Example) Every User has the ability to create an account
 
-### Wireframes (to do now)
+## 4. Technology (done)
+* Front-End: HTML5, CSS3, JavaScript ES6, React
+* Back-End: Node.js, Express.js, Mocha, Chai, RESTful API Endpoints, Postgres
+* Development Environment: Heroku, DBeaver
+
+### 5. Wireframes (to do now)
 (Example) Landing Page
 :-------------------------:
 ![Landing Page](/github-images/wireframes/landing-page-wireframe.png)
 Register Page
 ![Register Page](/github-images/wireframes/register-page-wireframe.png)
+
+## 6. Front-end Structure - React Components Map (to do later)
+* (Example) __Index.js__ (stateless)
+    * __App.js__ (stateful)
+        * __LandingPage.js__ (stateful) - gets the _"prop name"_ and the _"callback prop name"_ from the __App.js__
+            * __Login.js__ (stateful) -
+            * __Register.js__ (stateful) -
+        * __Navbar.js__ (stateless) -
+
+## 7. Back-end Structure - Business Objects (to do later)
+* (Example) Users (database table)
+    * id (auto-generated)
+    * username (email validation)
+    * password (at least 8 chars, at least one alpha and a special character validation)
+
+
+## 8. API Documentation (to do later)
+API Documentation details:
+* (Example) get all users
+
+
 
 ## Screenshots (to do later)
 (Example) Landing Page
@@ -29,38 +58,6 @@ Register Page
 Register Page
 ![Register Page](/github-images/screenshots/register-page-screenshot.png)
 
-## Functionality (to do now)
-The app's functionality includes:
-* (Example) Every User has the ability to create an account
-
-## Technology (done)
-* Front-End: HTML5, CSS3, JavaScript ES6, React
-* Back-End: Node.js, Express.js, Mocha, Chai, RESTful API Endpoints, Postgres
-* Development Environment: Heroku, DBeaver
-
-
-## Front-end Structure - React Components Map (to do later)
-* (Example) __Index.js__ (stateless)
-    * __App.js__ (stateful)
-        * __LandingPage.js__ (stateful) - gets the _"prop name"_ and the _"callback prop name"_ from the __App.js__
-            * __Login.js__ (stateful) -
-            * __Register.js__ (stateful) -
-        * __Navbar.js__ (stateless) -
-
-## Back-end Structure - Business Objects (to do later)
-* (Example) Users (database table)
-    * id (auto-generated)
-    * username (email validation)
-    * password (at least 8 chars, at least one alpha and a special character validation)
-
-
-## API Documentation (to do later)
-API Documentation details:
-* (Example) get all users
-
-## Responsive
-App is built to be usable on mobile devices, as well as responsive across mobile, tablet, laptop, and desktop screen resolutions.
-
 ## Development Roadmap (to do later)
 This is v1.0 of the app, but future enhancements are expected to include:
 * (Example) add more functionality
@@ -68,13 +65,13 @@ This is v1.0 of the app, but future enhancements are expected to include:
 ## How to run it (done)
 Use command line to navigate into the project folder and run the following in terminal
 
+### Local React scripts
+* To install the react project ===> npm install
+* To run react (on port 3000) ===> npm start
+* To run tests ===> npm run test
+
 ### Local Node scripts
 * To install the node project ===> npm install
 * To migrate the database ===> npm run migrate -- 1
 * To run Node server (on port 8000) ===> npm run dev
-* To run tests ===> npm run test
-
-### Local React scripts
-* To install the react project ===> npm install
-* To run react (on port 3000) ===> npm start
 * To run tests ===> npm run test
