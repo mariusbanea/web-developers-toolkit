@@ -1,5 +1,5 @@
 body {
-    color: white;
+    border: 3px solid white;
 }
 
 
@@ -14,42 +14,42 @@ for example the statament above says: IF the media on which this CSS is going to
 /*large desktop*/
 @media only screen and (max-width: 1600px) {
     body {
-        color: yellow;
+        border: 3px solid yellow;
     }
 }
 
 /*iPad lanscape / small laptop*/
 @media only screen and (max-width: 1024px) {
     body {
-        color: blue;
+        border: 3px solid blue;
     }
 }
 
 /*iPad potrait*/
 @media only screen and (max-width: 768px) {
     body {
-        color: red;
+        border: 3px solid red;
     }
 }
 
 /*Android landscape*/
 @media only screen and (max-width: 640px) {
     body {
-        color: brown;
+        border: 3px solid brown;
     }
 }
 
 /*iPhone landscape*/
 @media only screen and (max-width: 480px) {
     body {
-        color: green;
+        border: 3px solid green;
     }
 }
 
 /*iPhone portrait*/
 @media only screen and (max-width: 320px) {
     body {
-        color: purple;
+        border: 3px solid purple;
     }
 }
 
@@ -63,41 +63,41 @@ This is the ideal way to built websites because it is much easier to adapt from 
 /*iPhone portrait*/
 @media only screen and (min-width: 320px) {
     body {
-        color: purple;
+        border: 3px solid purple;
     }
 }
 
 /*iPhone landscape*/
 @media only screen and (min-width: 480px) {
     body {
-        color: green;
+        border: 3px solid green;
     }
 }
 
 /*Android landscape*/
 @media only screen and (min-width: 640px) {
     body {
-        color: brown;
+        border: 3px solid brown;
     }
 }
 
 /*iPad potrait*/
 @media only screen and (min-width: 768px) {
     body {
-        color: red;
+        border: 3px solid red;
     }
 }
 
 /*iPad lanscape / small laptop*/
 @media only screen and (min-width: 1024px) {
     body {
-        color: blue;
+        border: 3px solid blue;
     }
 }
 
 /*large desktop*/
 @media only screen and (min-width: 1600px) {
     body {
-        color: yellow;
+        border: 3px solid yellow;
     }
 }
