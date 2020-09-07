@@ -1,4 +1,4 @@
-# JS prototyping (Applicaiton Logic)
+# JS prototyping (Application Logic)
 
 ## Basic Logic is in 3 steps:
 * input
