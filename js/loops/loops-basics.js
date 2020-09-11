@@ -39,6 +39,6 @@ while (d > 5000) {
 
 //descending while loop going TOWARDS the limit (counting 10000 to 5000 downwards)
 let e = 10000;
-while (let e > 5000) {
+while (e > 5000) {
     e--;
 };
