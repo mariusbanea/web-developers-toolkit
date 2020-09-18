@@ -119,19 +119,20 @@ let list = function (e) {
     }
 
     self.findMiddle = () => {
-        //define the slow pointer the one going one element at a time
-        let slow = first;
-        //define the fast pointer the one going 2 elements at a time
-        let fast = first;
-
-        while (fast !== null && head.next !== null) {
+        //start at the beginning of the linked list
+        let head = first;
+        //define the slowPointer the one going one element at a time
+        let slowPointer = head;
+        //define the fastPointer the one going 2 elements at a time
+        let fastPointer = head;
+        while (fastPointer.next !== undefined && fastPointer.next.next !== undefined) {
             //parse the linked list 2 elements at a time
-            fast = head.next.next;
+            fastPointer = fastPointer.next.next;
             //parse the linked list one element at a time
-            slow = head.next;
+            slowPointer = slowPointer.next;
         }
-        //by the time the fast pointer is reaching the end of the list the slow one is in the middle
-        console.log(slow.data);
+        //by the time the fastPointer is reaching the end of the list the slowPointer one is in the middle
+        console.log(slowPointer.value);
     }
 
     //defines the value that needs to be changed
@@ -154,6 +155,11 @@ exampleList.insert(1);
 exampleList.insert(2);
 exampleList.insert(3);
 exampleList.insert(4);
+exampleList.insert(5);
+exampleList.insert(6);
+exampleList.insert(7);
+exampleList.insert(8);
+exampleList.insert(9);
 //show the list with the new elements in the list
 console.log("----> show the list with the new elements in the list");
 exampleList.show();
