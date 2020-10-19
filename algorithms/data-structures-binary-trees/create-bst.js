@@ -1,4 +1,4 @@
-const { BinarySearchTree } = require("./BST-class");
+const BinarySearchTree = require("./BST-class");
 
 const addItems = [3, 1, 4, 6, 9, 2, 5, 7];
 
