@@ -66,18 +66,18 @@ API Documentation details:
 
 
 
-## Screenshots (to do later)
+## 9. Screenshots (to do later)
 (Example) Landing Page
 :-------------------------:
 ![Landing Page](/github-images/screenshots/landing-page-screenshot.png)
 Register Page
 ![Register Page](/github-images/screenshots/register-page-screenshot.png)
 
-## Development Roadmap (to do later)
+## 10. Development Roadmap (to do later)
 This is v1.0 of the app, but future enhancements are expected to include:
 * (Example) add more functionality
 
-## How to run it (done)
+## 11. How to run it (done)
 Use command line to navigate into the project folder and run the following in terminal
 
 ### Local React scripts
