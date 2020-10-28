@@ -1,8 +1,11 @@
 # Capstone Project Title (to do now)
 One line description of what this app is doing and who is it for
 
+
+
 ### 1. Working Prototype (to do later)
 (Example) You can access a working prototype of the React app here: https://your-app-client.herokuapp.com/ and Node app here: https://your-app-server.herokuapp.com/
+
 
 
 ### 2. User Stories (to do now)
@@ -29,14 +32,19 @@ This app is for two types of users: a visitor and a logged-in user
 * So i can decide what section I want to navigate to.
 
 
+
 ### 3. Functionality (to do now)
 The app's functionality includes:
 * (Example) Every User has the ability to create an account
+
+
 
 ### 4. Technology (done)
 * Front-End: HTML5, CSS3, JavaScript ES6, React
 * Back-End: Node.js, Express.js, Mocha, Chai, RESTful API Endpoints, Postgres
 * Development Environment: Heroku, DBeaver
+
+
 
 ### 5. Wireframes (to do now)
 (Example) Landing Page
@@ -44,6 +52,8 @@ The app's functionality includes:
 ![Landing Page](/github-images/wireframes/landing-page-wireframe.png)
 Register Page
 ![Register Page](/github-images/wireframes/register-page-wireframe.png)
+
+
 
 ### 6. Front-end Structure - React Components Map (to do later)
 * (Example) __Index.js__ (stateless)
@@ -53,11 +63,14 @@ Register Page
             * __Register.js__ (stateful) -
         * __Navbar.js__ (stateless) -
 
+
+
 ### 7. Back-end Structure - Business Objects (to do later)
 * (Example) Users (database table)
     * id (auto-generated)
     * username (email validation)
     * password (at least 8 chars, at least one alpha and a special character validation)
+
 
 
 ### 8. API Documentation (to do later)
@@ -73,9 +86,13 @@ API Documentation details:
 Register Page
 ![Register Page](/github-images/screenshots/register-page-screenshot.png)
 
+
+
 ### 10. Development Roadmap (to do later)
 This is v1.0 of the app, but future enhancements are expected to include:
 * (Example) add more functionality
+
+
 
 ### 11. How to run it (done)
 Use command line to navigate into the project folder and run the following in terminal
