@@ -11,22 +11,22 @@ One line description of what this app is doing and who is it for
 ### 2. User Stories (to do now)
 This app is for two types of users: a visitor and a logged-in user
 
-###### (Example) Landing Page (Importance - High)
+###### (Example) Landing Page (Importance - High) (Est: 1h)
 * as a visitor
 * I want to understand what I can do with this app (or sign up, or log in)
 * so I can decide if I want to use it
 
-###### (Example) Login Page (Importance - High)
+###### (Example) Login Page (Importance - High) (Est: 3h)
 * As a returning register user
 * I want to enter my password and username to use this app,
 * So I can have access to my account.
 
-###### (Example) Sign Up (Importance - High)
+###### (Example) Sign Up (Importance - High)  (Est: 3h)
 * As a visitor
 * I want to register to use this app
 * So I can create a personal account.
 
-###### (Example) Home Page (Importance - Medium)
+###### (Example) Home Page (Importance - Medium)  (Est: 2h)
 * As a logged-in user,
 * I want to be able to preview the content of the app,
 * So i can decide what section I want to navigate to.
