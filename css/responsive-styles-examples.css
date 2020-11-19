@@ -35,7 +35,7 @@ for example the statament above says: IF the media on which this CSS is going to
 /*Android landscape*/
 @media only screen and (max-width: 640px) {
     body {
-        border: 3px solid brown;
+        border: 3px solid pink;
     }
 }
 
@@ -77,7 +77,7 @@ This is the ideal way to built websites because it is much easier to adapt from 
 /*Android landscape*/
 @media only screen and (min-width: 640px) {
     body {
-        border: 3px solid brown;
+        border: 3px solid pink;
     }
 }
 
