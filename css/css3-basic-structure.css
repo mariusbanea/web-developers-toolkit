@@ -63,25 +63,159 @@ General styles (General Module, wrapping around the modules below)
 (the styles used everywhere in the page (like the Body) or styles which are used in more than 2 of the modules below (h2, h3, h4, h5, h6, p, a, ul, li))
 */
 
-body {}
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  background-image: url("./images/Background-image.jpg");
+  background-color: #eee;
+  text-align: center;
+  line-height: 1.5;
+  height: auto;
+  border: 3px solid white;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+a {
+  text-decoration: none;
+}
 
 
 /* -------------------------------------
 Header styles (Main Module)
 (all the styles inside the < header > or < nav > tags)
 */
+header {
+  height: 700px;
+  width: 100%;
+  display: block;
+  position: relative;
+  padding-top: 20px;
+  margin-top: 0;
+  text-align: center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
 
+header h1 {
+  color: white;
+  margin-top: 10%;
+  font-size: 214%;
+}
+
+header nav {
+  position: fixed;
+  display: block;
+  width: 100%;
+  top: 0;
+  text-align: left;
+}
+
+header nav ul.nav-items,
+header nav div.logo {
+  display: inline-block;
+  width: auto;
+}
+
+header nav div.logo {
+  padding: 0px 20px;
+  color: #163a8b;
+  font-family: "Caveat", cursive;
+  font-size: 155%;
+}
+
+header nav ul.nav-items {
+  list-style-type: none;
+  float: right;
+}
+
+header nav ul.nav-items li {
+  display: inline-block;
+  width: auto;
+  padding: 10px 20px;
+  border-right: 2px solid #ddd;
+}
+
+header nav ul.nav-items li:last-child {
+  border-right: 0;
+}
 
 /* -------------------------------------
 Content styles (Main Module)
 (all the styles inside the < sections > or < aside > tags)
 */
+section {
+  width: 70%;
+  margin: 30px auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid green;
+  text-align: left;
+  font-family: "Roboto", serif;
+}
 
+section.projects {
+  display: block;
+}
+
+section.projects div.project-container {
+  margin-bottom: 5%;
+  margin-top: 2%;
+  border-bottom: 1px solid #ccc;
+}
+
+section.projects div.project-container:last-child {
+  border-bottom: 0;
+}
+
+section.projects div.project-container h4 {
+  margin-bottom: 15px;
+  font-size: 120%;
+}
+
+section.projects div.project-container div.project-column {
+  display: inline-block;
+  width: 48%;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+  margin-bottom: 1rem;
+  vertical-align: top;
+  padding-left: 20px;
+}
+
+section.projects div.project-container div.project-column img {
+  width: 100%;
+}
 
 /* -------------------------------------
 Footer styles (Main Module)
 (all the styles inside the < footer > tag)
 */
+
+footer {
+  margin-top: 50px;
+  margin-bottom: 15px;
+  border: 0px;
+}
+
+footer a i.far {
+  display: block;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  color: #163a8b;
+}
+
+footer a:hover i.far {
+  color: #081e6f;
+}
 
 
 /* -------------------------------------
