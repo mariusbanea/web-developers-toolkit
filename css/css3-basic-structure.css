@@ -64,10 +64,9 @@ General styles (General Module, wrapping around the modules below)
 */
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: sans-serif;
   font-size: 20px;
   color: rgb(0, 0, 0);
-  background-image: url("./images/Background-image.jpg");
   background-color: #eee;
   text-align: center;
   line-height: 1.5;
@@ -75,15 +74,72 @@ body {
   border: 3px solid white;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: cursive;
+}
+
+h2 {
+    color: #0E4EB4;
+}
+
+input,
+select,
+button {
+    border: 1px solid #0E4EB4;
+    padding: 10px 25px;
+    margin: 5px;
+    border-radius: 15px;
+    color: orange;
+}
+
+button {
+    background-color: transparent;
+    border: 2px solid #6D7296;
+}
+
+button:hover {
+    background-color: #EFC43F;
+    color: black;
+}
+
+button[type=submit] {
+    background-color: transparent;
+    border: 2px solid #C01C17;
+}
+
+button[type=submit]:hover {
+    color: #C01C17;
+}
+
+label {
+    display: block;
+    margin: 10px;
+}
+
+/*
+The clearfix Hack: If an element is taller than the element containing it, and it is floated, it will "overflow" outside of its container
+https://www.w3schools.com/css/css_float_clear.asp
+*/
 .clearfix::after {
   content: "";
   clear: both;
   display: table;
 }
 
-a {
-  text-decoration: none;
-}
+
 
 
 /* -------------------------------------
@@ -205,7 +261,7 @@ footer {
   border: 0px;
 }
 
-footer a i.far {
+footer a {
   display: block;
   position: fixed;
   bottom: 30px;
@@ -213,7 +269,7 @@ footer a i.far {
   color: #163a8b;
 }
 
-footer a:hover i.far {
+footer a:hover {
   color: #081e6f;
 }
 
