@@ -21,6 +21,9 @@ function checkString(inputString) {
     if (inputString == null) {
         outputText = "";
     }
+    if (inputString == "") {
+        outputText = "";
+    }
     return outputText;
 }
 //returns / if the url is NOT valid
@@ -32,6 +35,9 @@ function checkURL(inputURL) {
     if (inputURL == null) {
         outputURL = "/";
     }
+    if (inputURL == "") {
+        outputURL = "/";
+    }
     return outputURL;
 }
 //returns a "no-image" image if the image is NOT valid
@@ -41,6 +47,9 @@ function checkEmptyImage(inputURL) {
         outputURL = "https://legacytaylorsville.com/wp-content/uploads/2015/07/No-Image-Available1.png"
     }
     if (inputURL == null) {
+        outputURL = "https://legacytaylorsville.com/wp-content/uploads/2015/07/No-Image-Available1.png"
+    }
+    if (inputURL == "") {
         outputURL = "https://legacytaylorsville.com/wp-content/uploads/2015/07/No-Image-Available1.png"
     }
     return outputURL
