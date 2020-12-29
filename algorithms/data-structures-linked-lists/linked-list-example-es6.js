@@ -1,5 +1,11 @@
 //create a linked list object
 let list = function (e) {
+
+    //////////////////////////////////////////////////////////
+    ////// Step 1 - Define the global variabkles /////////////
+    //////////////////////////////////////////////////////////
+
+
     //"self" is the global "this" to be used for all methods; the local "this"-es are to be used inside each method
     const self = this;
 
@@ -11,6 +17,10 @@ let list = function (e) {
     let last;
     //current element in the list
     let head;
+
+    //////////////////////////////////////////////////////////
+    ////// Step 2 - Define the CRUD operations ///////////////
+    //////////////////////////////////////////////////////////
 
 
     //insert a new value method
@@ -134,6 +144,12 @@ let list = function (e) {
         //by the time the fastPointer is reaching the end of the list the slowPointer one is in the middle
         console.log(slowPointer.value);
     }
+
+
+    //////////////////////////////////////////////////////////
+    ////// Step 3 - Create a node and return self ////////////
+    //////////////////////////////////////////////////////////
+
 
     //defines the value that needs to be changed
     let Node = function (value) {
