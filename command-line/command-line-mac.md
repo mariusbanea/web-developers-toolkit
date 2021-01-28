@@ -37,3 +37,9 @@
 
 13. Copy a file
 > `cp`
+
+14. Switch to bash terminal
+> `exec bash`
+
+15. Switch to zsh terminal
+> `exec zsh`
