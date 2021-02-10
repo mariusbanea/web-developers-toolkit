@@ -74,8 +74,48 @@ Register Page
 
 
 ### 8. API Documentation (to do later)
-API Documentation details:
-* (Example) get all users
+#### API Overview
+    ```text
+    /api
+    .
+    ├── /auth
+    │   └── POST
+    │       ├── /login
+    ├── /users
+    │   └── POST
+    │       └── /
+    ```
+
+##### POST `/api/auth/login`
+    ```js
+    // req.body
+    {
+        "user_name": "demo@gmail.com",
+        "password": "Password1"
+    }
+
+    // res.body
+    {
+    "authToken": String,
+        "userId": 1
+    }
+```
+
+##### POST `/api/users/`
+    ```js
+    // req.body
+    {
+        "user_name": "demo@gmail.com",
+        "password": "123456"
+    }
+
+
+    // res.body
+    {
+        "id": 1,
+        "user_name": "demo@gmail.com"
+    }
+    ```
 
 
 
