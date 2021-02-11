@@ -75,7 +75,7 @@ Register Page
 
 ### 8. API Documentation (to do later)
 #### API Overview
-    ```text
+```text
     /api
     .
     ├── /auth
@@ -84,10 +84,10 @@ Register Page
     ├── /users
     │   └── POST
     │       └── /
-    ```
+```
 
 ##### POST `/api/auth/login`
-    ```js
+```js
     // req.body
     {
         "user_name": "demo@gmail.com",
@@ -102,7 +102,7 @@ Register Page
 ```
 
 ##### POST `/api/users/`
-    ```js
+```js
     // req.body
     {
         "user_name": "demo@gmail.com",
@@ -115,7 +115,7 @@ Register Page
         "id": 1,
         "user_name": "demo@gmail.com"
     }
-    ```
+```
 
 
 
