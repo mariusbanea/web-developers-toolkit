@@ -15,6 +15,8 @@
 const axios = require("axios");
 
 function getACountry(name) {
+
+    //example output https://restcountries.eu/rest/v2/name/united
     let url = `https://restcountries.eu/rest/v2/name/${name}`
 
     // test if the url is working
@@ -22,7 +24,9 @@ function getACountry(name) {
 
     axios
         .get(url)
+        //if the api response is successful
         .then(responseJson => {
+
             //check the results before using them
             console.log(responseJson);
 
@@ -41,6 +45,7 @@ function getACountry(name) {
                 }
             }
         })
+        //if the api response is NOT successful
         .catch(error => console.log(error));
 }
 
