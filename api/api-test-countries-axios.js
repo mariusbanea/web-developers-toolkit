@@ -23,15 +23,15 @@ function getACountry(name) {
     axios
         .get(url)
         .then(responseJson => {
-
+            //check the results before using them
             console.log(responseJson);
 
-            //if there are no results show errors 
+            //if there are no results show error
             if (responseJson.length == 0) {
                 console.log("No results");
             }
 
-            //if there are results, create an HTML results variable
+            //if there are results, display them
             else {
                 for (let i = 0; i < responseJson.length; i++) {
                     console.log(responseJson[i].name)
@@ -43,4 +43,6 @@ function getACountry(name) {
         })
         .catch(error => console.log(error));
 }
+
+
 getACountry("united");
