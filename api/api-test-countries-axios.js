@@ -10,16 +10,36 @@
   The api documentation is found here: 
   https://restcountries.eu/
 */
+
+//load axios (see documentation here: https://github.com/axios/axios)
 const axios = require("axios");
-const link = "https://restcountries.eu/rest/v2";
 
 function getACountry(name) {
-    let url = `${link}/name/${name}`
+    let url = `https://restcountries.eu/rest/v2/name/${name}`
+
+    // test if the url is working
     console.log(url)
+
     axios
         .get(url)
-        .then(data => {
-            console.log(data);
+        .then(responseJson => {
+
+            console.log(responseJson);
+
+            //if there are no results show errors 
+            if (responseJson.length == 0) {
+                console.log("No results");
+            }
+
+            //if there are results, create an HTML results variable
+            else {
+                for (let i = 0; i < responseJson.length; i++) {
+                    console.log(responseJson[i].name)
+                    console.log(responseJson[i].population)
+                    console.log(responseJson[i].capital)
+                    console.log(responseJson[i].region)
+                }
+            }
         })
         .catch(error => console.log(error));
 }
