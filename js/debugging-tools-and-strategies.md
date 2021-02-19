@@ -1,8 +1,12 @@
-## Logical strategies for debugging
+# Strategies and Tools for Debugging
+
+
+### Logical Strategies
 1. __divide and conquer__: break the problem into small enough pieces that can be tested one by one
 2. __mix and match__: compare and working version of your code from a previous application with the current broken one, in order to mix and match the solutions
 
-## Coding strategies for debugging
+
+### Coding Strategies
 1. check if there are any syntax errors in the Web Development Tools => Console
 2. check if the connection between the HTML elements and jQuery triggers are working by placing a console.log("here") inside the trigger;
 3. check if the jQuery trigger connects to the corresponding function by placing console.log("here") inside the function
@@ -15,7 +19,8 @@
 10. check if the "for" loops are counting by placing console.log("here") inside them
 11. check if existing code can be scaled up for large volumes (for example login 1000 users per second) by verifying the Big-O complexity (https://en.wikipedia.org/wiki/Big_O_notation)
 
-## Debugging tools (https://www.w3schools.com/js/js_debugging.asp)
+
+### Debugging Tools (https://www.w3schools.com/js/js_debugging.asp)
 * console.log() or alert()
     * If your browser supports debugging, you can use console.log() to display JavaScript values in the debugger window
 * debugger; (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/debugger)
@@ -34,7 +39,7 @@
 * for performance Web Dev tools > Network / Timeline / Audit
 
 
-## Most common misconceptions:
+### Most Common Misconceptions:
 * I haven’t changed anything and it broke by itself!
     * it is not possible to have different outputs for the same input (Einstein definition of insanity), so something must have been changed between the time when the app worked and now that it is not
 * I can’t see the difference between the working code and the broken one!
