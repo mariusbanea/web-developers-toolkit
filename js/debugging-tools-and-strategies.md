@@ -35,11 +35,11 @@
 
 
 ## Most common misconceptions:
-> I haven’t changed anything and it broke by itself!
+* I haven’t changed anything and it broke by itself!
     * it is not possible to have different outputs for the same input (Einstein definition of insanity), so something must have been changed between the time when the app worked and now that it is not
-> I can’t see the difference between the working code and the broken one!
+* I can’t see the difference between the working code and the broken one!
     * assume that what you are looking for is already in front your eyes; just look hard enough and long enough for it
-> It is easier to guess the solution than to understand the problems!
+* It is easier to guess the solution than to understand the problems!
     * spend more time reading and understanding the problem that fixing it; if you are doing it the other most likely you are guessing the solution, which might lead to breaking the code further before fixing it
-> It takes too long to fix the code!
+* It takes too long to fix the code!
     * it takes about 90% of the time to find a bug and 10% to fix it; if you test often enough; the only place to search for and error would be the last few lines that where not tested
