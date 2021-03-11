@@ -12,7 +12,7 @@
 */
 
 //load axios (see documentation here: https://github.com/axios/axios)
-const axios = require("axios");
+const axios = require("axios")
 
 function getACountry(name) {
 
@@ -32,7 +32,7 @@ function getACountry(name) {
 
             //if there are no results show error
             if (responseJson.data.length == 0) {
-                console.log("No results");
+                console.log("No results")
             }
 
             //if there are results, display them
@@ -53,24 +53,24 @@ function getACountry(name) {
                     // console.log(responseJson.data[i].capital)
                     // console.log(responseJson.data[i].region)
 
-                    //populate the empty object with the name, capital, region, and capital.
-                    itemObject.name = responseJson.data[i].name;
-                    itemObject.population = responseJson.data[i].population;
-                    itemObject.capital = responseJson.data[i].capital;
-                    itemObject.region = responseJson.data[i].region;
-                    // console.log(itemObject, "itemObject");
+                    //populate the empty object with the name, capital, region and capital
+                    itemObject.name = responseJson.data[i].name
+                    itemObject.population = responseJson.data[i].population
+                    itemObject.capital = responseJson.data[i].capital
+                    itemObject.region = responseJson.data[i].region
+                    // console.log(itemObject, "itemObject")
 
                     //push these item object into the ouputArray
-                    outputArray.push(itemObject);
+                    outputArray.push(itemObject)
                 }
                 //return the output array
-                console.log(outputArray, "outputArray");
+                console.log(outputArray, "outputArray")
 
             }
         })
         //if the api response is NOT successful
-        .catch(error => console.log(error));
+        .catch(error => console.log(error))
 }
 
 
-getACountry("united");
+getACountry("united")
