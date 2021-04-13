@@ -11,9 +11,9 @@
 2. check if the connection between the HTML elements and jQuery triggers are working by placing a console.log("here") inside the trigger;
 3. check if the jQuery trigger connects to the corresponding function by placing console.log("here") inside the function
 4. check if for jQuery nested triggers and avoid them
-5. check if the data submitted by the html forms is the same with the data received inside the the function using (console log the relevant data)
+5. check if the data submitted by the html forms is the same with the data received inside the function using (console log the relevant data)
 6. check if every function definition has at least one function usage associated to it
-7. check if data flows between cascading functions by console log the input paramenters after the first line in the function and the value of output just before the return in the same function
+7. check if data flows between cascading functions by console log the input parameters after the first line in the function and the value of output just before the return in the same function
 8. check if the "if" statements are true by placing console.log("here") inside them or console log the comparison items before the "if"
 9. check if the "while" are counting towards the limit to avoid infinite loops
 10. check if the "for" loops are counting by placing console.log("here") inside them
@@ -40,11 +40,11 @@
 
 
 ### Most Common Misconceptions:
-* I haven’t changed anything and it broke by itself!
+* I haven’t changed anything, and it broke by itself!
     * it is not possible to have different outputs for the same input (Einstein definition of insanity), so something must have been changed between the time when the app worked and now that it is not
 * I can’t see the difference between the working code and the broken one!
-    * assume that what you are looking for is already in front your eyes; just look hard enough and long enough for it
+    * assume that what you are looking for is already in front of your eyes; just look hard enough and long enough for it
 * It is easier to guess the solution than to understand the problems!
-    * spend more time reading and understanding the problem that fixing it; if you are doing it the other most likely you are guessing the solution, which might lead to breaking the code further before fixing it
+    * spend more time reading and understanding the problem than fixing it; if you are doing it the other most likely you are guessing the solution, which might lead to breaking the code further before fixing it
 * It takes too long to fix the code!
-    * it takes about 90% of the time to find a bug and 10% to fix it; if you test often enough; the only place to search for and error would be the last few lines that where not tested
+    * it takes about 90% of the time to find a bug and 10% to fix it; if you test often enough, the only place to search for and error would be the last few lines that were not tested
