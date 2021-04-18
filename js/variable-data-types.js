@@ -41,7 +41,7 @@ let carDetails = {
         "turbo": true
     },
     //methods are functions living inside objects
-    myCar: function () {
+    myCar: function() {
         return `My Car is a ${this.make} ${this.model}`;
     }
 };
@@ -60,15 +60,16 @@ console.log(carDetails.myCar()); // shows "My Car is a Nissan Terrano"
 */
 
 
-//(6) function definition used to create code templates https://github.com/mariusbanea/web-developers-toolkit/blob/master/js/functions-and-objects-theory-with-examples.js
 /*
-The functions are a set of instructions ready to be reused multiple times (is a like a recipe in a cook book)
+(6) The functions are a set of instructions ready to be reused multiple times (is a like a recipe in a cook book)
+
+function definition used to create code templates https://github.com/mariusbanea/web-developers-toolkit/blob/master/js/functions/functions-and-objects-theory-with-examples.js
 
  function components:
  -- function name (ex: "addingNumbers") (example: like a the recipe title)
  -- input parameters or arguments (ex: "parameter1", "parameter2") (example: like a set of ingredients in a recipe)
  -- output parameters or arguments (ex: "result") (example: like the description of what dish gets cooked from that recipe)
- -- some set of instructions to convert the imput parameters into output (ex: "let result = parameter1 + parameter2;") (example: like the steps to cook the ingredients to create a dish in a recipe)
+ -- some set of instructions to convert the input parameters into output (ex: "let result = parameter1 + parameter2;") (example: like the steps to cook the ingredients to create a dish in a recipe)
 
 function definition:
 */
