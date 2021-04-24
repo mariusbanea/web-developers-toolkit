@@ -10,6 +10,9 @@ function checkInteger(inputInteger) {
     if (inputInteger == null) {
         outputValue = 0;
     }
+    if (!Number.isInteger(inputInteger)) {
+        outputValue = 0;
+    }
     return outputValue;
 }
 //returns empty string if the string is NOT valid
@@ -22,6 +25,9 @@ function checkString(inputString) {
         outputText = "";
     }
     if (inputString == "") {
+        outputText = "";
+    }
+    if (typeof inputString !== 'string') {
         outputText = "";
     }
     return outputText;
@@ -41,18 +47,18 @@ function checkURL(inputURL) {
     return outputURL;
 }
 //returns a "no-image" image if the image is NOT valid
-function checkEmptyImage(inputURL) {
-    let outputURL = inputURL
-    if (inputURL === undefined) {
-        outputURL = "https://legacytaylorsville.com/wp-content/uploads/2015/07/No-Image-Available1.png"
+function checkEmptyImage(inputEmptyImage) {
+    let outputEmptyImage = inputEmptyImage
+    if (inputEmptyImage === undefined) {
+        outputEmptyImage = "https://legacytaylorsville.com/wp-content/uploads/2015/07/No-Image-Available1.png"
     }
-    if (inputURL == null) {
-        outputURL = "https://legacytaylorsville.com/wp-content/uploads/2015/07/No-Image-Available1.png"
+    if (inputEmptyImage == null) {
+        outputEmptyImage = "https://legacytaylorsville.com/wp-content/uploads/2015/07/No-Image-Available1.png"
     }
-    if (inputURL == "") {
-        outputURL = "https://legacytaylorsville.com/wp-content/uploads/2015/07/No-Image-Available1.png"
+    if (inputEmptyImage == "") {
+        outputEmptyImage = "https://legacytaylorsville.com/wp-content/uploads/2015/07/No-Image-Available1.png"
     }
-    return outputURL
+    return outputEmptyImage
 }
 //returns empty string if the email is NOT valid
 function validateEmail(inputEmail) {
