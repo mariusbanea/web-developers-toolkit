@@ -77,3 +77,61 @@ function getACountry(name) {
 
 
 getACountry("united")
+
+/*
+General Axios syntax for PUT and POST calls:
+
+axios.post(url, {
+        body
+    }, {
+        headers: {
+            "Content-Type": "application/json"
+        }
+    })
+    .then(r => console.log(r.status))
+    .catch(e => console.log(e));
+
+
+axios.put(url, {
+        body
+    }, {
+        headers: {
+            "Content-Type": "application/json"
+        }
+    })
+    .then(r => console.log(r.status))
+    .catch(e => console.log(e));
+*/
+
+
+/*
+
+Example Axios syntax for PUT and POST calls:
+
+axios.post("/save", {
+        {
+            firstName: 'Marlon',
+            lastName: 'Bernardes'
+        }
+    }, {
+        headers: {
+            "Content-Type": "application/json"
+        }
+    })
+    .then(r => console.log(r.status))
+    .catch(e => console.log(e));
+
+
+axios.put("/update", {
+        {
+            firstName: 'Jenny',
+            lastName: 'Thomson'
+        }
+    }, {
+        headers: {
+            "Content-Type": "application/json"
+        }
+    })
+    .then(r => console.log(r.status))
+    .catch(e => console.log(e));
+*/
