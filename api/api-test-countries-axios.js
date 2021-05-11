@@ -7,6 +7,7 @@
   * Capital
   * Region
   * Population
+  * Currencies
   The api documentation is found here:
   https://restcountries.eu/
 */
@@ -51,18 +52,20 @@ function getACountry(name) {
                     // console.log(responseJson.data[i].population)
                     // console.log(responseJson.data[i].capital)
                     // console.log(responseJson.data[i].region)
+                    // console.log(responseJson.data[i].currencies[0])
 
                     //create an empty object to store one item
                     let itemObject = {}
 
-                    //populate the empty object with the name, capital, region and capital
+                    //populate the empty object with the name, capital, region and capital and currencies
                     itemObject.name = responseJson.data[i].name
                     itemObject.population = responseJson.data[i].population
                     itemObject.capital = responseJson.data[i].capital
                     itemObject.region = responseJson.data[i].region
+                    itemObject.currencies = responseJson.data[i].currencies[0]
                         // console.log(itemObject)
 
-                    //push these item object into the ouputArray
+                    //push these item object into the outputArray
                     outputArray.push(itemObject)
                 }
                 //return the output array
@@ -77,61 +80,3 @@ function getACountry(name) {
 
 
 getACountry("united")
-
-/*
-General Axios syntax for PUT and POST calls:
-
-axios.post(url, {
-        body
-    }, {
-        headers: {
-            "Content-Type": "application/json"
-        }
-    })
-    .then(r => console.log(r.status))
-    .catch(e => console.log(e));
-
-
-axios.put(url, {
-        body
-    }, {
-        headers: {
-            "Content-Type": "application/json"
-        }
-    })
-    .then(r => console.log(r.status))
-    .catch(e => console.log(e));
-*/
-
-
-/*
-
-Example Axios syntax for PUT and POST calls:
-
-axios.post("/save", {
-        {
-            firstName: 'Marlon',
-            lastName: 'Bernardes'
-        }
-    }, {
-        headers: {
-            "Content-Type": "application/json"
-        }
-    })
-    .then(r => console.log(r.status))
-    .catch(e => console.log(e));
-
-
-axios.put("/update", {
-        {
-            firstName: 'Jenny',
-            lastName: 'Thomson'
-        }
-    }, {
-        headers: {
-            "Content-Type": "application/json"
-        }
-    })
-    .then(r => console.log(r.status))
-    .catch(e => console.log(e));
-*/
