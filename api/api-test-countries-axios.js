@@ -30,48 +30,36 @@ function getACountry(name) {
         .then(responseJson => {
 
             //check the results before using them
-            // console.log(responseJson.data);
+            console.log(responseJson.data);
 
+            //define an array to output the data
+            let outputArray = [];
 
+            //loop through the responseJson data object
+            for (let i = 0; i < responseJson.data.length; i++) {
 
-            //if there are no results show error
-            if (responseJson.data.length == 0) {
-                console.log("No results")
+                // console.log(responseJson.data[i].name)
+                // console.log(responseJson.data[i].population)
+                // console.log(responseJson.data[i].capital)
+                // console.log(responseJson.data[i].region)
+                // console.log(responseJson.data[i].currencies[0])
+
+                //create an empty object to store one item
+                let itemObject = {}
+
+                //populate the empty object with the name, capital, region and capital and currencies
+                itemObject.name = responseJson.data[i].name
+                itemObject.population = responseJson.data[i].population
+                itemObject.capital = responseJson.data[i].capital
+                itemObject.region = responseJson.data[i].region
+                itemObject.currencies = responseJson.data[i].currencies[0]
+                    // console.log(itemObject)
+
+                //push these item object into the outputArray
+                outputArray.push(itemObject)
             }
-
-            //if there are results, display them by returning an array of objects
-            else {
-
-                //define an array to output the data
-                let outputArray = [];
-
-                //loop through the responseJson data object
-                for (let i = 0; i < responseJson.data.length; i++) {
-
-                    // console.log(responseJson.data[i].name)
-                    // console.log(responseJson.data[i].population)
-                    // console.log(responseJson.data[i].capital)
-                    // console.log(responseJson.data[i].region)
-                    // console.log(responseJson.data[i].currencies[0])
-
-                    //create an empty object to store one item
-                    let itemObject = {}
-
-                    //populate the empty object with the name, capital, region and capital and currencies
-                    itemObject.name = responseJson.data[i].name
-                    itemObject.population = responseJson.data[i].population
-                    itemObject.capital = responseJson.data[i].capital
-                    itemObject.region = responseJson.data[i].region
-                    itemObject.currencies = responseJson.data[i].currencies[0]
-                        // console.log(itemObject)
-
-                    //push these item object into the outputArray
-                    outputArray.push(itemObject)
-                }
-                //return the output array
-                console.log(outputArray)
-
-            }
+            //return the output array
+            console.log(outputArray)
 
         })
         //if the api response is NOT successful
