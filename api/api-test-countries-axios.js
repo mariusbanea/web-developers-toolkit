@@ -20,10 +20,11 @@ function getACountry(name) {
     //navigate to https://restcountries.eu/#api-endpoints-name for the API endpoint documentation
     let url = `https://restcountries.eu/rest/v2/name/${name}`
 
-    // test if the url is working
+    // test if the url is working: shows https://restcountries.eu/rest/v2/name/united
     console.log(url)
-        //shows https://restcountries.eu/rest/v2/name/united
 
+    //build the axios basic code first
+    //axios.get().then().catch()
     axios
         .get(url)
         //if the api response is successful
