@@ -74,9 +74,19 @@ function definition used to create code templates https://github.com/mariusbanea
 function definition:
 */
 function addingNumbers(parameter1, parameter2) {
+    //check the input params
+    console.log(parameter1, parameter2)
     let result = parameter1 + parameter2;
+    //check the output before delivery
+    console.log(result)
     return result;
 };
+
+//NOTE: variables parameter1, parameter2 defined inside the function will not be available outside it
+console.log(parameter1) //returns undefined
+
+
 //function usage or call (example: like cooking a recipe from the cook book)
 console.log(addingNumbers(3, 4)); //result is 7
+console.log(addingNumbers(2, 9)); //result is 11
 console.log(addingNumbers(2, 9)); //result is 11
