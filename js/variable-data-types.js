@@ -92,5 +92,3 @@ console.log(parameter1) //returns undefined
 //function usage or call (example: like cooking a recipe from the cook book)
 console.log(addingNumbers(3, 4)); //result is 7
 console.log(addingNumbers(2, 9)); //result is 11
-console.log(addingNumbers(2, 9)); //result is 11
-console.log(addingNumbers(2, 9)); //result is 11
