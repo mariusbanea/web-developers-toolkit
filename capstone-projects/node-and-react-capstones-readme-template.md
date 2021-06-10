@@ -1,5 +1,5 @@
 # Capstone Project Title (to do now)
-One line description of what this app is doing and who is it for
+One line description of what this app is doing and who is it for (what type of user will be using this app; what problems these users are having; how your app is solving these problems)
 
 
 
