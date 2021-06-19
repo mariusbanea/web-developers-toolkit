@@ -1,7 +1,8 @@
-const {Stack} = require("./stack-class");
+const { Stack } = require("./stack-class");
 const helperFuncs = require("./stack-methods");
 
 const parenthesesCheck = (exp) => {
+
     // Setup our new stack
     let stack = new Stack();
 
@@ -11,7 +12,9 @@ const parenthesesCheck = (exp) => {
         "[": "]",
         "{": "}",
     };
+
     let revMap = {};
+
     for (let key in map) {
         if (!revMap.hasOwnProperty(key)) revMap[map[key]] = key;
     }
@@ -23,15 +26,13 @@ const parenthesesCheck = (exp) => {
     // Iterate through the expression
     for (let i = 0; i < exp.length; i++) {
         // If we have a quote in our stack and we haven't found the matching quote, just move forward
-        if (
-            !helperFuncs.isEmpty(stack) && // Not empty
+        if (!helperFuncs.isEmpty(stack) && // Not empty
             parentheses.includes(helperFuncs.peek(stack).data) && // Stack top is a quote
             helperFuncs.peek(stack).data !== exp[i] // Current index does not match the quote
         ) {
             // Move forward with the loop
             continue;
-        } else if (
-            !helperFuncs.isEmpty(stack) &&
+        } else if (!helperFuncs.isEmpty(stack) &&
             helperFuncs.peek(stack).data === exp[i]
         ) {
             stack.pop();
@@ -64,7 +65,7 @@ const parenthesesCheck = (exp) => {
     }
     if (!helperFuncs.isEmpty(stack))
         return `Missing closing tag for ${stack.pop()}`;
-        
+
     return `Expression is valid`;
 };
 
