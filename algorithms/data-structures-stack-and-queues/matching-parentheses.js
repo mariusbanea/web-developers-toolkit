@@ -88,6 +88,7 @@ const isMatchingBrackets = function(str) {
         "[": "]",
         "{": "}",
     };
+
     // loop over the characters in the string
     for (let i = 0; i < str.length; i++) {
         // If character is an opening brace add it to a stack
@@ -104,6 +105,7 @@ const isMatchingBrackets = function(str) {
             }
         }
     }
+
     // By the completion of the for loop after checking all the brackets of the str, at the end, if the stack is not empty then fail
     if (stack.length !== 0) {
         return false;
