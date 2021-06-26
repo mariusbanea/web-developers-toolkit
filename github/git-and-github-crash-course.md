@@ -15,16 +15,16 @@
 
     2.2. github desktop (purple cat software) can only complete basic tasks (commit, push, pull, etc) but is going to display full info about your repository
 
-    2.3. github.com is website specialised in the collaborative (multiple user collaborate in the same code) part of the git
+    2.3. github.com is website specialized in the collaborative (multiple user collaborate in the same code) part of the git
 
 
 ## C. What is Git used for?
 1. To create backups (the most often usage):
         --> if the code has no bugs or conflicts and a part of the website is complete (for example "header ready").
 2. To test new code:
-        --> Create a new branch from the master and we call that branch the name of we want to build (lets say footer); we continue working on that branch until the footer is ready; after that we take all the code from the master, we make sure that there are no conflicts or errors, and than we push the code back to master (including the new functionality).
+        --> Create a new branch from the main and we call that branch the name of we want to build (lets say footer); we continue working on that branch until the footer is ready; after that we take all the code from the main, we make sure that there are no conflicts or errors, and than we push the code back to main (including the new functionality).
 3. When multiple developers are working on the same code:
-        --> Each developer creates a new branch with the name of they want to build (let’s say one is building the login and the other the shopping chart); they keep working in their own branches until they complete the tasks; after that they take all the code from the master, we make sure that there are no conflicts or errors, and than they push the code back to master (including the new functionality).
+        --> Each developer creates a new branch with the name of they want to build (let’s say one is building the login and the other the shopping chart); they keep working in their own branches until they complete the tasks; after that they take all the code from the main, we make sure that there are no conflicts or errors, and than they push the code back to main (including the new functionality).
 
 
 ## D. How Git works?
@@ -47,7 +47,7 @@ There are 2 main cycles:
 
         * git remote add origin https://github.com/username/test.git
 
-        * git push -u origin master
+        * git push -u origin main
 
 2. `Daily-Back-Up-Your-Project Cycle` (commit changes and synchronize)
         Note: Run the following command inside the repository folder
@@ -59,13 +59,13 @@ There are 2 main cycles:
     > git commit -m 'Some message for you future self explaining why is this commit important';
 
     2.3. download all the code from the server and make sure there are no conflict with your own code
-    >git pull origin master;
+    >git pull origin main;
 
-    2.4 synchronise your own code with the server
-    >git push --set-upstream origin master;
+    2.4 synchronize your own code with the server
+    >git push --set-upstream origin main;
 
     2.5 All commands on one line shortcut:
-    > git add . ; git commit -m 'REPLACE-ME'; git pull origin master; git push --set-upstream origin master
+    > git add . ; git commit -m 'REPLACE-ME'; git pull origin main; git push --set-upstream origin main
 
 
 ## E. Common Git command lines
@@ -90,7 +90,7 @@ There are 2 main cycles:
 
 
 ## G. Jargon Buster
-Usefull for the interview questions like "What is difference beetween clone and pull?")
+Useful for the interview questions like "What is difference between clone and pull?")
 1. `fork` = on the Github.com server, copy repository from one user account to another (this is done without any connection to your local computer)
 2. `clone` = copy repository from your own account on the server to your own computer (only if you don't have project on your own computer)
 3. `pull` = copy the existing code from the your repository in your online Github.com account to update the folder on your own computer
@@ -99,8 +99,8 @@ Usefull for the interview questions like "What is difference beetween clone and 
 
 
 
-## H. Master and branches names and usage
-1. Master (in production environment this is the live website)
+## H. main and branches names and usage
+1. main (in production environment this is the live website)
 2. facebook-login (some branch to test facebook login functionality)
 
 
