@@ -268,7 +268,8 @@ function concordance(data) {
         });
 
     }
-
+    // Object.fromEntries() method transforms a list of key-value pairs into an object.
+    // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/fromEntries
     let conc = Object.fromEntries(map);
 
     return conc;
