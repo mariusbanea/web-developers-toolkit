@@ -53,7 +53,7 @@ console.log(carDetails.myCar()); // shows "My Car is a Nissan Terrano"
 - arrays are having integers as key (0, 1, 2)
 - objects are having string as keys ("make", "model")
 - arrays are not using too much space on in the memory, but if they are changed, it is hard to retrieve the data
-- arrays is inside the square brackets []
+- arrays are inside the square brackets []
 - objects are using far more space in the memory, but it is easier to retrieve data
 - objects are inside the square brackets {}
 - objects can have methods inside, but the arrays can't
